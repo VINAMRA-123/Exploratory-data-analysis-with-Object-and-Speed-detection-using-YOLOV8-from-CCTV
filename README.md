@@ -10,24 +10,24 @@ Additionally, the software finds the speed of vehicles by determining the time t
 
 ## METHODOLOGIES AND CONCEPTS
 
-### 3.1 Theoretical Concept of YOLO
+### 1 Theoretical Concept of YOLO
 
 YOLO (You Only Look Once) is a real-time object detection algorithm that divides the input image into cells and predicts bounding boxes and class probabilities for objects within each cell.
 
-### 3.2 Preparing the Dataset and Annotations for Training
+### 2 Preparing the Dataset and Annotations for Training
 
 1. **Object Labeling**: Used labeling tools to annotate objects within images, specifying bounding boxes.
 2. **Annotation File Creation**: Generated text files with bounding box coordinates and object class IDs for each image.
 3. **Organizing Directory Structure**: Structured the dataset into training and validation sets.
 
-### 3.3 Training the YOLO Model Using Darknet
+### 3 Training the YOLO Model Using Darknet
 
 - Created a class `YOLO_Pred` to facilitate object detection using YOLO.
 - Initialized the model with pre-trained weights and configured it for object detection.
 - Implemented the `predictions` method to perform object detection and draw bounding boxes around detected objects.
 - Used non-maximum suppression to refine and filter detections.
 
-### 3.4 Fine-tuning the Pre-trained YOLO Model for Better Accuracy
+### 4 Fine-tuning the Pre-trained YOLO Model for Better Accuracy
 
 - Prepared a custom dataset with annotated objects.
 - Customized YOLO configuration for the specific number of classes.
@@ -35,18 +35,18 @@ YOLO (You Only Look Once) is a real-time object detection algorithm that divides
 - Conducted fine-tuning by training the model on the custom dataset.
 - Optimized learning rates and hyperparameters for better performance.
 
-### 3.5 Testing the Trained Model on Images and Videos
+### 5 Testing the Trained Model on Images and Videos
 
 - Evaluated model performance using a confusion matrix and precision-recall curves.
 - Achieved precision and recall of over 70%.
 - Visualized detection results on images and videos.
 
-### 3.6 Visualizing the Results and Tuning the Parameters for Better Performance
+### 6 Visualizing the Results and Tuning the Parameters for Better Performance
 
 - Displayed input and output images with detected objects.
 - Iteratively tuned parameters to improve detection accuracy.
 
-### 3.7 Speed Detection
+### 7 Speed Detection
 
 - Created a class for tracking vehicles detected in video feeds, assigning unique IDs and updating their positions.
 - Calculated vehicle speeds based on position changes over time.
